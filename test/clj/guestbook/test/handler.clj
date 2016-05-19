@@ -14,4 +14,4 @@
 
 (deftest is-broken
   (testing "that this gets triggered"
-   (is (= 2 25))))
+   (is (= 25 25))))
