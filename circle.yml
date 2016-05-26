@@ -1,9 +1,9 @@
 machine:
   java:
     version: openjdk8
-  # post:
-  #   - lein run:
-  #       background: true
+  post:
+    - lein run:
+      background: true
 dependencies:
   pre:
     - sudo apt-get update
