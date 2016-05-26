@@ -12,4 +12,4 @@ dependencies:
 
 test:
   override:
-    - xvfb-run lein test
+    - xvfb-run -a lein test
