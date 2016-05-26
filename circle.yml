@@ -8,7 +8,7 @@ dependencies:
   pre:
     - sudo apt-get update
     - sudo apt-get -y install xvfb
-    - sudo apt-get install firefox
+    - sudo apt-get update && sudo apt-get install libpango1.0-0 && sudo apt-get install firefox
 
 test:
   override:
