@@ -1,6 +1,7 @@
 machine:
   java:
     version: openjdk8
+machine:
   post:
     - lein run:
       background: true
