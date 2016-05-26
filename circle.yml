@@ -7,9 +7,8 @@ machine:
 dependencies:
   pre:
     - sudo apt-get update
-    - sudo apt-get -y install xvfb
     - sudo apt-get update && sudo apt-get install libpango1.0-0 && sudo apt-get install firefox
 
-test:
-  override:
-    - xvfb-run -a lein test
+# test:
+#   override:
+#     - xvfb-run -a lein test
