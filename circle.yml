@@ -1,12 +1,15 @@
 machine:
   java:
     version: openjdk8
-    # post:
-    # - lein run:
-    #       background: true
-    # - sleep 5
+    post:
+    - lein run:
+          background: true
 dependencies:
   pre:
     - sudo apt-get update
     - sudo apt-get -y install xvfb
     - sudo apt-get install firefox
+
+test:
+  override:
+    - xvfb-run lein test
